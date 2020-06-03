@@ -14,3 +14,5 @@ class OpenacademyCourse(models.Model):
         'res.users', ondelete='set null', index=True)
     session_ids = fields.One2many(
         'openacademy.session', 'course_id', string="Sessions")
+    material_ids = fields.One2many(
+        'openacademy.material', 'course_id', string='Materials')

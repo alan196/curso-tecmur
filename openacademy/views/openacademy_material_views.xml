@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="material_form_view">
+        <field name="name">material.form</field>
+        <field name="model">openacademy.material</field>
+        <field name="arch" type="xml">
+            <form string="Material Form">
+                <sheet>
+                    <group>
+                        <field name="course_id"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="Material_tree_view">
+        <field name="name">material.tree</field>
+        <field name="model">openacademy.material</field>
+        <field name="arch" type="xml">
+            <tree string="Material Tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="material_list_action">
+        <field name="name">Materials</field>
+        <field name="res_model">openacademy.material</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="material_menu" name="Materials"
+              parent="openacademy_menu"
+              action="material_list_action"/>
+</odoo>
