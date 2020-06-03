@@ -15,6 +15,8 @@
         'security/ir.model.access.csv',
         'views/openacademy_course_views.xml',
         'views/openacademy_session_views.xml',
+        'views/openacademy_material_views.xml',
+        'views/openacademy_prtner_views.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',
