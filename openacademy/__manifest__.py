@@ -16,7 +16,7 @@
         'views/openacademy_course_views.xml',
         'views/openacademy_session_views.xml',
         'views/openacademy_material_views.xml',
-        'views/openacademy_prtner_views.xml',
+        'views/res_partner_views.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',

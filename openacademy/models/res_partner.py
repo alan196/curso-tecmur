@@ -4,7 +4,7 @@
 from odoo import fields, models
 
 
-class Partner(models.Model):
+class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     instructor = field_name = fields.Boolean(
