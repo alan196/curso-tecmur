@@ -28,6 +28,8 @@ class OpenacademySession(models.Model):
     active = fields.Boolean(default=True)
     end_date = fields.Date(
         compute='_compute_end_date', inverse='_inverse_end_date', store=True)
+    attendees_count = fields.Integer(
+        compute='_compute_attendees_count', store=True)
 
     @api.depends('seats', 'attendee_ids')
     def _compute_taken_seats(self):
@@ -36,6 +38,11 @@ class OpenacademySession(models.Model):
                 rec.taken_seats = 0.0
             else:
                 rec.taken_seats = 100.0 * len(rec.attendee_ids) / rec.seats
+
+    @api.depends('attendee_ids')
+    def _compute_attendees_count(self):
+        for rec in self:
+            rec.attendees_count = len(rec.attendee_ids)
 
     @api.onchange('seats', 'attendee_ids')
     def _onchange_verify_valid_seats(self):
