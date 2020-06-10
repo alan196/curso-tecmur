@@ -20,6 +20,7 @@
         'views/res_partner_views.xml',
         'views/res_partner_category_views.xml',
         'data/res_partner_data.xml',
+        'wizards/openacademy_wizard_views.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',
