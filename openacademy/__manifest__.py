@@ -21,6 +21,7 @@
         'views/res_partner_category_views.xml',
         'data/res_partner_data.xml',
         'wizards/openacademy_wizard_views.xml',
+        'report/report.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',
