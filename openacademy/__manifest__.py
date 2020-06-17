@@ -11,6 +11,7 @@
     'depends': [
         'base',
         'board',
+        'sale_management',
     ],
     'data': [
         'security/security.xml',
@@ -24,6 +25,7 @@
         'wizards/openacademy_wizard_views.xml',
         'report/report.xml',
         'views/openacademy_session_board.xml',
+        'report/sale_order_report.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',
