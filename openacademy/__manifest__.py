@@ -10,6 +10,7 @@
     'license': 'LGPL-3',
     'depends': [
         'base',
+        'board',
     ],
     'data': [
         'security/security.xml',
@@ -22,6 +23,7 @@
         'data/res_partner_data.xml',
         'wizards/openacademy_wizard_views.xml',
         'report/report.xml',
+        'views/openacademy_session_board.xml',
     ],
     'demo': [
         'demo/openacademy_course.xml',
